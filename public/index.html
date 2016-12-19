@@ -1,0 +1,28 @@
+{% extends 'layout/master.nj.html' %}
+
+{% block contents %}
+<div class="pull-right">
+    <a href="/add" class="btn btn-primary">Add Book</a>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th>stt</th>
+        <th>name</th>
+        <th>author</th>
+        <th>action</th>
+    </tr>
+    </thead>
+    {% for book in books %}
+    <tr>
+        <td>{{loop.index}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.author}}</td>
+        <td>
+            <a href="/edit/{{book._id}}" class="btn btn-primary">edit</a>
+            <a href="/delete/{{book._id}}" class="btn btn-danger">delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

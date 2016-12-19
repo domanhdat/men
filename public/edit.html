@@ -1,0 +1,16 @@
+{% extends 'layout/master.nj.html' %}
+
+{% block contents %}
+<form method="POST" action="/update">
+    <input type="hidden" name="_id" value="{{book._id}}">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{book.name}}">
+    </div>
+    <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" name="author" placeholder="Author" value="{{book.author}}">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}
