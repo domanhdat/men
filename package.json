@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/forever start server.js",
+    "stop": "node_modules/.bin/forever stop server.js",
+    "restart": "node_modules/.bin/forever restart server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +19,6 @@
     "express-nunjucks": "^2.1.2",
     "mongodb": "^2.2.16",
     "nunjucks": "^3.0.0"
-  }
+  },
+  "devDependencies": {}
 }
