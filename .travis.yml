@@ -3,6 +3,8 @@ node_js:
   - "6"
   - "6"
   - "5"
+install:
+  - npm install forever -g
 before_script:
   - npm install
   - npm run start
