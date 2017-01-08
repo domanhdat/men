@@ -1,7 +1,12 @@
-var Promise             = require('bluebird');
-var mongodb             = require('./share/mongodb');
-var bookServiceProvider = require('./app/book/book-service-provider');
+const Promise             = require('bluebird');
+const mongodb             = require('./share/mongodb');
+const bookServiceProvider = require('./app/book/book-service-provider');
 
+/**
+ *
+ * @param app
+ * @returns {Promise}
+ */
 const boot = (app) => {
     return Promise.resolve(app)
         .then(mongodb)

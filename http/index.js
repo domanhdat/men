@@ -1,4 +1,4 @@
-var routerApi = require('./api/router');
-var routerWeb = require('./web/router');
+const routerApi = require('./api/router');
+const routerWeb = require('./web/router');
 
 module.exports = {routerApi, routerWeb};

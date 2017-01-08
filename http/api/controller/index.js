@@ -1,2 +1,2 @@
-var IndexController = require('./index-controller');
-module.exports = {IndexController};
+const IndexController = require('./index-controller');
+module.exports        = {IndexController};
